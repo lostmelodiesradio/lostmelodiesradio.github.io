@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lost Melodies Radio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lost Melodies Radio</h1>
+  <p>Welcome to Lost Melodies Radio! Here you will find a collection of forgotten tunes and mysterious songs.</p>
+  <h2>Playlist</h2>
+  <div id="player"></div>
+  <a href="https://soundcloud.com/lostmelodiesradio/sets/lost-melodies-radio">Open on SoundCloud</a>
+
+  <script src="https://w.soundcloud.com/player/api.js"></script>
+  <script>
+    SC.initialize();
+
+    // Создание плеера с использованием SoundCloud плейлиста
+    SC.oEmbed('https://soundcloud.com/lostmelodiesradio/sets/lost-melodies-radio', { element: document.getElementById('player') });
+  </script>
+</body>
+</html>
